@@ -15,7 +15,7 @@ end.parse!
 if options[:ip_address].nil?
     puts "Please, could you provide the IP address to the form."
 else
-  directory = options[:directory]
+  directory = options[:directory].gsub("\\", "/")
 
   if options[:files].nil? && !directory.nil?
     options[:files] = Array.new
