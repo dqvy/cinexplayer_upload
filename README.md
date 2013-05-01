@@ -1,9 +1,10 @@
-cinexplayer_upload
+Upload files to CineXPlayer
 ==================
 
 Ruby script which allows you uploading files to CineXPlayer by using their HTML upload form.
 
-Two usages:
+Usages
+==================
 - by providing a list of files
 - by using all files including in a specific folder
 
