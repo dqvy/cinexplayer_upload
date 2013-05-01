@@ -9,14 +9,15 @@ Two usages:
 
 For each usage you have to configure the ip address of your iPad/iPhone by using the-h parameter (hostname does not work for the moment)
 
-ruby client.rb -h 192.168.1.8
+<code>ruby client.rb -h 192.168.1.8</code>
 
 In order to specify files you have to use the -l paramater by adding files separated by a comma
 
-ruby client.rb -h 192.168.1.8 -l sample-video-1.mp4,sample-video-2.mp4,sample-video-3.mp4
+<code>ruby client.rb -h 192.168.1.8 -l sample-video-1.mp4,sample-video-2.mp4,sample-video-3.mp4</code>
 
 In order to use all files in a specific folder you have to use the -d paramater
 
+<code>
 ruby client.rb -h 192.168.1.8 -d ~/Documents/Videos/
 
 Upload from folder /Users/davypallu/Documents/Videos/
@@ -29,3 +30,4 @@ File /Users/davypallu/Documents/Videos/sample-video-2.mp4 added in the list of 2
 Upload /Users/davypallu/Documents/Videos/sample-video-3.mp4? (Y/N)
 y
 File /Users/davypallu/Documents/Videos/sample-video-3.mp4 added in the list of 3 element(s).
+</code>
