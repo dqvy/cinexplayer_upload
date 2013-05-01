@@ -11,6 +11,6 @@ In order to specify files you have to use the -l paramater by adding files separ
 
 <code>ruby client.rb -h 192.168.1.8 -l sample-video-1.mp4,sample-video-2.mp4,sample-video-3.mp4</code>
 
-In order to use all files in a specific folder you have to use the -d paramater
+In order to select files with mp4, avi or srt extensions within a specific folder you have to use the -d paramater
 
 <code>ruby client.rb -h 192.168.1.8 -d ~/Documents/Videos/</code>
