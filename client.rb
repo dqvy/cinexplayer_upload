@@ -17,11 +17,11 @@ if options[:ip_address].nil?
 else
   directory = options[:directory]
 
-  unless options[:files].nil? && directory.nil?
+  if options[:files].nil? && !directory.nil?
     options[:files] = Array.new
     puts "Upload from folder #{directory}"
     if Dir.exists?(directory)
-      dir = Dir.glob(File.join(directory, '*.{mp4,srt,avi}'))
+      dir = Dir.glob(File.join(directory, '**/*.{mp4,srt,avi}'))
       dir.each {
         |f|
         puts "Upload #{f}? (Y/N)"
