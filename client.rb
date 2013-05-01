@@ -54,10 +54,14 @@ else
           :upfile => File.new(file)
         })
 
-        time = Time.now - beginning_loop
-        sizeInKiloBytes = sizeInBytes / 2**10
-        speed = (sizeInKiloBytes / time)
-        puts "#{file} uploaded in #{time.round(2)} seconds at #{speed.round(2)}KB/s"
+        if response.code == 200
+          time = Time.now - beginning_loop
+          sizeInKiloBytes = sizeInBytes / 2**10
+          speed = (sizeInKiloBytes / time)
+          puts "#{file} uploaded in #{time.round(2)} seconds at #{speed.round(2)}KB/s"
+        else
+          puts "Error during the upload #{response.message} (#{response.code})"
+        end
         sleep 3
       else
         puts "The file #{file} does not exist."
