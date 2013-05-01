@@ -17,17 +17,4 @@ In order to specify files you have to use the -l paramater by adding files separ
 
 In order to use all files in a specific folder you have to use the -d paramater
 
-<code>
-ruby client.rb -h 192.168.1.8 -d ~/Documents/Videos/
-
-Upload from folder /Users/davypallu/Documents/Videos/
-Upload /Users/davypallu/Documents/Videos/sample-video-1.mp4? (Y/N)
-y
-File /Users/davypallu/Documents/Videos/sample-video-1.mp4 added in the list of 1 element(s).
-Upload /Users/davypallu/Documents/Videos/sample-video-2.mp4? (Y/N)
-y
-File /Users/davypallu/Documents/Videos/sample-video-2.mp4 added in the list of 2 element(s).
-Upload /Users/davypallu/Documents/Videos/sample-video-3.mp4? (Y/N)
-y
-File /Users/davypallu/Documents/Videos/sample-video-3.mp4 added in the list of 3 element(s).
-</code>
+<code>ruby client.rb -h 192.168.1.8 -d ~/Documents/Videos/</code>
