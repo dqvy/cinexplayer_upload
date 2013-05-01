@@ -1,8 +1,3 @@
-Upload files to CineXPlayer
-==================
-
-Ruby script which allows you uploading files to CineXPlayer by using their HTML upload form.
-
 Usages
 ==================
 - by providing a list of files
